@@ -36,6 +36,7 @@ Create a custom chat agent.  The chat agent will use transcripts from financial 
 
 We have two transcripts from a web site dedicated to investment discussions.  The site is focused on creating an archive of investment advice for the average investor.  It has weekly episodes.  We transcribed two episodes using the Whisper API.  We now seek to use those transcriptions as a knowledge store for a custom chat agent.  The agent should be able to switch between the different documents.  Here is an example of a discussion:
 
+```
 Enter a query to search the transcript: How does the speaker believe AI will supplant tech jobs?
 
 Querying transcript:
@@ -43,6 +44,7 @@ Querying transcript:
 Streaming chat completion...
 
 The speaker believes that artificial intelligence (AI) will supplant tech jobs by improving productivity and profit margins for companies. As companies invest in AI technology to enhance their operations, they may rely less on human labor for certain tasks, leading to the displacement of some tech jobs. Companies that accumulate a lot of data on their consumers and leverage AI technology to analyze and utilize that data may have an easier time improving their profit margins, potentially reducing the need for certain tech-related roles.null
+```
 
 We will use the openai-java 3rd party library. This library provides us a way to connect to OpenAI via Java.
 

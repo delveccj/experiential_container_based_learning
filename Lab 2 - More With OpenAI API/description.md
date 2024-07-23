@@ -14,7 +14,7 @@ ________________________________________________________________________________
 
 **Project**: Examination of OpenAI's Whisper API
 
-**Created By**: Justin Del Vecchio
+**Created By**: Joe Smith
 
 **Date Created**: February 4, 2024
 

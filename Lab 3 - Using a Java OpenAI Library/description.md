@@ -16,7 +16,7 @@ This will also be the first lab where you may use VisualStudio Code.  You are en
 
 **Project**: Examination of openai-java 3rd Party Library
 
-**Created By**: Justin Del Vecchio
+**Created By**: Joe Smith
 
 **Date Created**: February 11, 2024
 

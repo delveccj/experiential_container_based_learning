@@ -14,7 +14,7 @@ This lab will again use Visual Studio Code.  The class path variable has been se
 
 **Project**: Use Internal Documents as Question/Answering Context
 
-**Created By**: Justin Del Vecchio
+**Created By**: Joe Smith
 
 **Date Created**: February 19, 2024
 

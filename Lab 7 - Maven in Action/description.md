@@ -7,6 +7,18 @@ Learning Maven will equip you with essential skills for managing Java projects e
 
 ---
 
+**Project**: Develop a Tutorial for New Interns that Demonstrates How Maven Works - Just the Basics.
+
+**Created By**: Joe Smith
+
+**Date Created**: March 25, 2024
+
+**Version**: 1.0
+
+**Target Community of Interest**: ACME Corp's latest set of intern hires.
+
+___
+
 **Goal**
 
 The goal of this lab is to familiarize you with Apache Maven, a robust build automation tool used widely in the software development industry. You will learn how to manage dependencies, compile code, run tests, and package your project into a runnable Jar file. By the end of this lab, you will have a solid understanding of Maven’s capabilities and how it streamlines the development process.

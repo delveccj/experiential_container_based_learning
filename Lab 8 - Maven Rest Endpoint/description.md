@@ -1,72 +1,57 @@
+# Maven Rest Endpoint #
 This lab will have many moving parts!  Large scale programming has many moving parts - it is not just about coding.  I will step you through it.  Let's do the following:
 
-Step 1: Review Rest Endpoints
+---
 
-Lets look at an endpoint in action:
+**Project**: Develop a Tutorial for New Interns that Demonstrates to Easily Create a REST Endpoint with Maven.
 
-Open up Chrome or Firefox
-Lets head to Whitehouse.gov
-Let's open Developer Tools (if using Chrome! There is some analogy in Firefox)
-Click on the Network tab
-And let's look at the services on this page.
-It is using Google tracking:
-Rest Endpoint Base: /g/collect
-Query Parameters:
-v=2: Indicates the version of the tracking protocol.
-tid=G-CSLL4ZEK4L: Represents the tracking ID.
-gtm=45je44m0v9131934939za200: Likely related to Google Tag Manager.
-_p=1713970287277: Possibly a timestamp or session identifier.
-gcd=13l3l3l3l1: Unknown parameter.
-npa=0: Indicates whether non-personalized ads are allowed (0 for false).
-dma=0: Unknown parameter.
-cid=684367544.1713970255: Client ID.
-ul=en-us: User language (English, United States).
-sr=1920x1080: Screen resolution.
-uaa=arm: User agent architecture (ARM).
-uab=64: User agent bitness (64-bit).
-uafvl=Chromium%3B124.0.6367.62%7CGoogle%2520Chrome%3B124.0.6367.62%7CNot-A.Brand%3B99.0.0.0: User agent field values (Chromium, Google Chrome, Not-A.Brand).
-uamb=0: Unknown parameter.
-uam=: Empty user agent modifier.
-uap=macOS: User agent platform (macOS).
-uapv=14.1.0: User agent platform version (macOS 14.1.0).
-uaw=0: Unknown parameter.
-are=1: Indicates an event (page view).
-pscdl=noapi: Unknown parameter.
-_s=1: Unknown parameter.
-dl=https%3A%2F%2Fwww.whitehouse.gov%2F: Destination URL (The White House website).
-dt=The%20White%20House: Document title (The White House).
-sid=1713970254: Session ID.
-sct=1: Unknown parameter.
-seg=1: Unknown parameter.
-en=page_view: Event name (page view).
-_ee=1: Unknown parameter.
-ep.agency=EOP: Event property (agency: Executive Office of the President).
-ep.subagency=WHITEHOUSE.GOV: Event property (subagency: whitehouse.gov).
-ep.site_topic=unspecified%3Awhitehouse.gov: Event property (site topic: unspecified).
-ep.site_platform=unspecified%3Awhitehouse.gov: Event property (site platform: unspecified).
-ep.script_source=https%3A%2F%2Fdap.digitalgov.gov%2Funiversal-federated-analytics-min.js: Event property (script source: dap.digitalgov.gov/universal-federated-analytics-min.js).
-ep.version=20240416%20v7.01%20-%20dual%20tracking: Event property (version: 20240416 v7.01 - dual tracking).
-ep.protocol=https%3A: Event property (protocol: HTTPS).
-tfd=5151: Unknown parameter.
-This URL is related to tracking and analytics for the White House website. The parameters provide information about the user’s environment, session, and the specific page view. 
+**Created By**: Joe Smith
 
+**Date Created**: April 1, 2024
 
-Step 2: Create a Maven Rest Project
+**Version**: 1.0
 
-Let's create a Maven rest project.  Its easy!  Follow this tutorial.  Make sure you issue all the commands from /usercode directory - the automated test anticipates that:
+**Target Community of Interest**: ACME Corp's latest set of intern hires.
 
-https://spring.io/guides/gs/rest-service
+___
 
-Let's run the project and see what we have got here!
+**Goal** The goal of this lab is to teach you how to implement a simple RESTful service using Maven, build it, and create a runnable Jar file. This exercise will help you understand the intricacies of managing dependencies, compiling code, running tests, and packaging your application, reflecting the complexities of large-scale programming projects.
 
-Step 3: Run the test bench
+**Summary** In this lab, you are an ACME Corp developer tasked with creating a tutorial for new hires on setting up a Maven-based RESTful service. You will first review REST endpoints using a real-world example, then create a Maven project following a guided tutorial. Finally, you will run a test bench to ensure your project is correctly set up and functioning. This comprehensive exercise will provide hands-on experience with Maven and RESTful services.
 
-It will:
+**References**
+To help you complete this lab, refer to the following resources:
+1. [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/index.html)
+2. [Spring Guide: Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+3. [Maven: The Complete Reference](https://books.sonatype.com/mvnref-book/reference/public-book.html)
 
-1. cd into the demo directory
+**Performance Parameters**
+Your performance in this lab will be evaluated based on:
+1. **Correctness**: The RESTful service must compile and run correctly with all dependencies managed by Maven.
+2. **Maven Configuration**: Proper setup and configuration of the `pom.xml` file to manage dependencies, plugins, and build lifecycle.
+3. **Runnable Jar File**: Successful creation of a runnable Jar file using Maven.
+4. **Endpoint Functionality**: The RESTful endpoint must be accessible and return the expected results.
+5. **Documentation**: Clear and concise documentation of the steps taken and any challenges faced during the lab.
 
-2. build your project
+**Research Approach Needs and Tasks:**
 
-3. run it, and
+**Task 1: Review REST Endpoints**
+1. Open Chrome or Firefox.
+2. Navigate to [Whitehouse.gov](https://www.whitehouse.gov).
+3. Open Developer Tools (F12 in Chrome, equivalent in Firefox).
+4. Click on the Network tab.
+5. Observe the REST endpoints being used on the page, particularly the Google tracking endpoint.
+6. Understand the different query parameters used in these endpoints.
 
-4. make sure the curl endpoint works!
+**Task 2: Create a Maven REST Project**
+1. Create a Maven REST project by following this [Spring guide](https://spring.io/guides/gs/rest-service/).
+2. Ensure you issue all commands from the `/usercode` directory, as the automated test anticipates this.
+3. Follow the tutorial to set up the project, implement the REST service, and configure Maven.
+
+**Task 3: Run the Test Bench**
+1. Navigate to the `demo` directory.
+2. Build your project using Maven.
+3. Run the project to ensure it starts correctly.
+4. Use `curl` or a similar tool to test the RESTful endpoint and verify it works as expected.
+
+By completing these tasks, you will gain practical experience with Maven and RESTful web services, essential skills for any Java developer.

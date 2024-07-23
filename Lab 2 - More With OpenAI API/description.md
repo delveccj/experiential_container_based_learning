@@ -1,3 +1,5 @@
+#More With OpenAI API#
+
 This lab builds upon what we have done in Lab 2.  The ACME corp knows that it is feasible to call the OpenAI ChatGPT API over the Internet.  Success!
 
 ACME corp develops tutorials and training for people new to investing.  Their product has a Java backend that works with a Web interface.  They have many YouTube videos and audio recordings about investing that reside in their knowledge store.
@@ -10,25 +12,25 @@ Join ACME as they perform the following research task.
 
 _____________________________________________________________________________________________
 
-Project: Examination of OpenAI's Whisper API
+**Project**: Examination of OpenAI's Whisper API
 
-Created By: Justin Del Vecchio
+**Created By**: Justin Del Vecchio
 
-Date Created: February 4, 2024
+**Date Created**: February 4, 2024
 
-Version: 1.0
+**Version**: 1.0
 
-Target Community of Interest: ACME Corp's project planning management.
+**Target Community of Interest**: ACME Corp's project planning management.
 
 ________________________
 
-Research Goal: Determine the feasibility of calling and using the OpenAI's Whisper API .  Evaluate the quality of the generated voice transcription.
+**Research Goal**: Determine the feasibility of calling and using the OpenAI's Whisper API .  Evaluate the quality of the generated voice transcription.
 
-Summary: We will use the Whisper API.  It will be called with Java using HTTP connections.  We will supply a sample audio file.  We will generate the transcription.  We will perform a basic examination to determine if the transcription has good precision.
+**Summary**: We will use the Whisper API.  It will be called with Java using HTTP connections.  We will supply a sample audio file.  We will generate the transcription.  We will perform a basic examination to determine if the transcription has good precision.
 
 Our target systems only support up through Java 17.  Our target system is the ZyBook advanced lab environment.
 
-References:
+**References**:
 
 The OpenAI Whisper API implementation is found here:
 
@@ -60,28 +62,28 @@ https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.1/commons-io-2.1
 
 Next, we need to call the Whisper API.  This is explained further in the tasks section.
 
-Performance Parameters:
+**Performance Parameters**:
 
 Our measurable at the end of this examination is getting the two test cases to pass.  Our goal is to verify that both approaches work.
 
 ________________________
 
-Research Approach Needs and Tasks:  Here is a plan to complete this research project.
+**Research Approach Needs and Tasks**:  Here is a plan to complete this research project.
 
-Task One: Look at the file MP3Downloader.java.  You can just go ahead and compile and run this file.  It will just work and download the file for you!  There is one issue, though.  You will need to figure out how to add the jar file:
+**Task One**: Look at the file MP3Downloader.java.  You can just go ahead and compile and run this file.  It will just work and download the file for you!  There is one issue, though.  You will need to figure out how to add the jar file:
 
 commons-io.jar
 
 to your Java class path.  Without it, you will get an error that looks like this.  That is to be expected!
-
+```
 MP3Downloader.java:14: error: package org.apache.commons.io does not exist
 import org.apache.commons.io.FileUtils;
 ^
 MP3Downloader.java:29: error: cannot find symbol
 FileUtils.copyURLToFile(new URL(FDR_SPEECH_URL), speech, 10000, 10000);
 This will be a task of trial and error!  You will know you are successful when you see the file speech.mp3 in the file viewer to left.
-
-Task Two: No skipping, you must have done Task One before moving to this task! In the file directory at left you will find a script file.  It is named:
+```
+**Task Two**: No skipping, you must have done Task One before moving to this task! In the file directory at left you will find a script file.  It is named:
 
 curl_example.sh
 This file, when run from the command line, will connect to OpenAI and send the audio file to be processed.  Look at the Java file WhisperExample.java.  It shows how you can call a script (in this case the Linux bash script that calls WhisperAPI) from within Java.  It's really handy and will work just fine.
@@ -90,5 +92,5 @@ You will notice something about this file though.  First, it won't run if you do
 
 But you are running it from Java.  So, you need to figure out how to capture the output from a ProcessBuilder.  This will be a bit of trial and error on your part.
 
-Task Three: Run the test cases and make sure that they pass.
+**Task Three**: Run the test cases and make sure that they pass.
 

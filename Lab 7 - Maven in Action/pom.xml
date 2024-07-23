@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <!-- Group ID: Replace with your project's group ID -->
+    <groupId>edu.canisius.csc.213</groupId>
+    
+    <!-- Artifact ID: Replace with your project's artifact (project) ID -->
+    <artifactId>Lab8</artifactId>
+    
+    <!-- Version: Replace with your project's version -->
+    <version>1</version>
+    
+    <!-- Other optional configurations can go here -->
+    
+    <!-- Dependencies, plugins, build profiles, etc. can be specified as needed -->
+    <dependencies>
+    </dependencies>
+
+</project>

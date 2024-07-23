@@ -5,6 +5,7 @@ An element of large scale programming is defining what a software development pr
 Here is the setup.  Let's assume you work at a company that develops software.  They have a series of internal projects or research projects they wish to perform.  Companies will typically have a portfolio of such projects to choose from.  They key is, such an idea needs to bounded.  It needs to be scoped. Why?  So that project management can plan the future and make rational decisions about, literally, what to do next.  What project do they work on next.
 
 Imagine, if you will, the following project description is one of those in the portfolio.  It is for a fictitious company named ACME Corp who develops software for state governments.
+
 ---
 
 **Project**: Examination of OpenAI's API Via Java
